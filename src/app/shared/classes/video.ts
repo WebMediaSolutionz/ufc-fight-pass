@@ -8,6 +8,8 @@ export class Video {
 
     public channel?: string;
 
+    public status?: string;
+
     public thumb: string;
 
     public src: string;
