@@ -4,7 +4,13 @@
 
   <div class="col-sm-3" *ngFor="let video of videos">
 
-    <a class="block video" [routerLink]="'/video/' + video.id" (click)="playVideo(video)">
+    <a class="block video {{video.status}}" [routerLink]="video.status === 'available' ? '/video/' + video.id : '/videos'">
+
+      <div class="watermark">
+
+        <h3 *ngIf="video.status === 'unavailable'">this video is unavailable</h3>
+
+      </div>
 
       <img [src]="video.thumb">
 

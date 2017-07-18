@@ -16,18 +16,10 @@ export class VideosComponent implements OnInit {
 
   private videos: Video[];
 
-  @Output() private select: EventEmitter<Video>;
-
-  constructor(private videosService: VideosService) {
-    this.select = new EventEmitter();
-  }
+  constructor(private videosService: VideosService) {}
 
   ngOnInit() {
     this.videos = this.videosService.getVideos();
-  }
-
-  public playVideo(video: Video) {
-    this.select.emit(video);
   }
 
 }
