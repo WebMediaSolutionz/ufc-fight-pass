@@ -11,18 +11,11 @@ export class VideosService {
   constructor() {
     this.videos = [
       {
-        id: 1,
-        name: 'ufc 190',
-        thumb: 'assets/images/thumbs/ufc190.jpg',
-        status: 'available',
-        src: 'http://www.webmediasolutionz.com/projects/internal/fight_pass/public/UPS/89/videos/ufc190.mp4'
-      },
-      {
-        id: 2,
-        name: 'ufc 195',
-        thumb: 'assets/images/thumbs/ufc195.jpg',
-        status: 'available',
-        src: 'http://www.webmediasolutionz.com/projects/internal/fight_pass/public/UPS/89/videos/ufc195.mp4'
+        id: 4,
+        name: 'ufc 200',
+        thumb: 'assets/images/thumbs/ufc200.jpg',
+        status: 'unavailable',
+        src: ''
       },
       {
         id: 3,
@@ -32,11 +25,18 @@ export class VideosService {
         src: 'http://www.webmediasolutionz.com/projects/internal/fight_pass/public/UPS/89/videos/ufc199.mp4'
       },
       {
-        id: 4,
-        name: 'ufc 200',
-        thumb: 'assets/images/thumbs/ufc200.jpg',
-        status: 'unavailable',
-        src: ''
+        id: 2,
+        name: 'ufc 195',
+        thumb: 'assets/images/thumbs/ufc195.jpg',
+        status: 'available',
+        src: 'http://www.webmediasolutionz.com/projects/internal/fight_pass/public/UPS/89/videos/ufc195.mp4'
+      },
+      {
+        id: 1,
+        name: 'ufc 190',
+        thumb: 'assets/images/thumbs/ufc190.jpg',
+        status: 'available',
+        src: 'http://www.webmediasolutionz.com/projects/internal/fight_pass/public/UPS/89/videos/ufc190.mp4'
       }
     ]
   }
