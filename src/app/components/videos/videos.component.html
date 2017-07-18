@@ -1,0 +1,15 @@
+<h1>Videos</h1>
+
+<div class="videos row">
+
+  <div class="col-sm-3" *ngFor="let video of videos">
+
+    <a class="block video" [routerLink]="'/video/' + video.id" (click)="playVideo(video)">
+
+      <img [src]="video.thumb">
+
+    </a>
+
+  </div>
+
+</div>
